@@ -1,0 +1,243 @@
+	@font-face{
+		font-family:"valo";
+		src: url("src/font/valo.ttf");
+	}
+
+	@font-face{
+		font-family:"tom";
+		src: url("src/font/tommy.otf");
+	}
+
+	body
+	{
+		margin: 0px;
+		background-color: ghostwhite;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+	header
+	{
+		background:url(src/img/banner2.png);
+		background-size:cover;
+		width: 100%;
+		color: #fff;
+		background-position: center;
+		background-repeat: repeat;
+		padding:1px;
+		position:relative;
+		z-index: 998;
+
+	}
+
+	.barre-fixe
+	{
+		position: fixed;
+		width: 100%;
+		height: 11%;
+		top:0;
+		left:0;
+		background-color: #061c2e;
+		z-index:997;
+	}
+	.name
+	{
+		color: white;
+		font-family: valo;
+		margin: 4.5%;
+		margin-left: 7%;
+		font-size: 4vw;
+
+	}
+
+
+	.menu{
+		display: flex;
+		justify-content: center;
+		text-decoration: none;
+		width: 100%;
+		position:fixed;top:0;
+		z-index: 999;
+	}
+
+
+	.contain_menu .text_menu{
+		text-decoration: none;
+		color: white;
+		font-family: tom;	
+		font-size : 1.4vw;
+		padding-bottom: 2px;
+		border-bottom: 0.1vw solid silver;
+		vertical-align: middle;
+		z-index: 999;
+	}	
+
+	.contain_menu{
+		padding: 1.5%;
+	}
+
+	.left
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	.text-bvn
+	{
+		color: silver;
+		margin-left: 15%;
+		font-size: 4vh;
+	}
+
+	.divz{
+		animation: 1.5s slide;
+		position: relative;
+		top: 1%;
+		left:7.5%;
+		width: 90%;
+		font-family: tom;
+		z-index:996;
+	}
+
+	.main{
+		width: 92%;
+		display: flex;
+		background-color: ghostwhite;
+		justify-content: space-around;
+		padding: 4%;
+		margin:0%;
+	}
+
+	.main-comp
+	{
+		width: 35%;
+		height: auto;
+		background-color: #202c42;
+		border-radius:6px;
+	}
+
+	.main-text
+	{
+		width: 50%;
+		background-color: #202c42;
+		border-radius: 6px;
+	}
+	.div-2
+	{
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+	}
+
+	.hr-1
+	{
+		border: 1px solid silver;
+	}
+	.hr-2
+	{
+		width: 60%;
+	}
+	.div-3
+	{	
+		position:relative;
+		width: 90%;
+		height: 30%;
+		background-color:#061c2e;
+	}
+
+	progress
+	{
+		display: block;
+		width: 90%;
+		height: 2%;
+		border-radius: 5%;
+		background: none;
+		margin: 0 auto;
+
+	}
+
+
+	progress::-webkit-progress-bar
+	{
+		border-radius: 3px;
+		background-color: grey;
+	}
+
+	progress::-webkit-progress-value
+	{
+		border-radius: 3px;
+		background-color: #186db8;
+	}
+
+	.tarifs
+	{
+		margin-left: 7.5%;
+		width: 85%;
+		background-color: #202c42;
+		border-radius: 6px;
+	}
+	.web
+	{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+	.div-web
+	{
+		border-top: 4px solid #c2c08f;
+		padding: 2%;
+		background-color: #434f66;
+		border-radius: 10px;
+	}
+
+	.div-crea
+	{
+		border-top: 4px solid #c2c08f;
+		padding: 1%;
+		background-color: #434f66;
+		border-radius: 3px;
+		width:40%;
+
+	}
+
+	.jeux
+	{
+		width:100%;
+		display: flex;
+		justify-content: space-around;
+	}
+	.div-jeux
+	{
+		border-top: 4px solid green;
+		padding: 2%;
+		background-color: #434f66;
+		border-radius: 3px;
+	}
+
+	footer
+	{
+		background-color: #061c2e;
+		display: flex;
+		justify-content: space-around;
+	}
+	.footer-1
+	{
+		padding-left: 10%;
+		padding-top: 4%;
+		padding-bottom: 4%;
+		width: 13%;
+	}
+	.footer-contact
+	{
+		margin-top: 3%;
+	}
+	h3
+	{
+		color: silver;
+		font-size:1vw;
+	}
+	@keyframes slide{
+		from{
+			opacity:0%;	} 
+		to{
+			opacity:100%;	
+			} 
+	}
